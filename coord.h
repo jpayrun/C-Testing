@@ -6,7 +6,7 @@ struct Coordinate {
 };
 
 // So we don't need to write struct
-typedef struct Coordinate {
+typedef struct coordinat_t {
     int x;
     int y;
     int z;

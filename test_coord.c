@@ -13,7 +13,7 @@ int main(void) {
     // c.z = 3;
 
     //struct Coordinate c = {1, 2, 3};
-    coordinat_t c = {1, 2, 3};
+    coordinat_t c = {1, .y = 2, 3};
 
     printf("X is %d, Y is %d, Z is %d\n", c.x, c.y, c.z);
 

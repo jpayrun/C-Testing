@@ -27,12 +27,18 @@ void insertion_sort(int *arr, int len) {
   }
 }
 
+// Need to point to the values to swap
+// We are using a pointer since we are passing by reference, not value
 void swap(int *a, int *b) {
+  // We derefferene the values to swap them
+  // So rather than temp being a point, temp is now a
   int temp = *a;
+  // We derefference the pointer so we can change the value
   *a = *b;
   *b = temp;
 }
 
+// We have a pointer to the array location as an arguement
 void printarr(int *arr, int len){
   for (int i = 0; i < len; i++) {
     printf("%d", arr[i]);
